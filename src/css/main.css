@@ -32,7 +32,8 @@
   }
   h1,
   h2 {
-    font-weight: bold;
+    /* font-weight: bold; */
+    line-height: 1;
     font-family: "DM sans-m", sans-serif;
   }
 }

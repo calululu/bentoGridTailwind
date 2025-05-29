@@ -1,40 +1,52 @@
 ---
 import Card from "./Card.astro";
 ---
-<main class="grid grid-rows-8 grid-cols-4 gap-4 w-dvw h-dvh">
-<Card color="hsl(256, 67%, 59%)" extraClasses="col-span-2 col-start-2">
-    <h1 class="text-white text-center">Social Media <span class="text-yellow-500">10x</span> <span class="italic">Faster</span> with AI</h1>
-    <img class="w-1/10" src="/images/illustration-five-stars.webp" alt="image">
-    <p class="text-yellow-100">Over 4,000 5-starts reviews</p>
+<main class="grid grid-rows-10 grid-cols-4 gap-4 w-dvw h-dvh p-20 pl-40 pr-40">
+<Card color="hsl(256, 67%, 59%)" extraClasses="col-span-2 col-start-2 row-span-4 row-start-1 flex flex-col items-center justify-evenly">
+    <h1 class="text-white text-center text-5xl">Social Media <span class="text-yellow-500">10x</span> <span class="italic">Faster</span> with AI</h1>
+    <div class="flex flex-col items-center">
+        <img class="w-4/10" src="/images/illustration-five-stars.webp" alt="image">
+        <p class="text-yellow-100">Over 4,000 5-starts reviews</p>
+    </div>
 </Card>
-<Card color="hsl(0, 0%, 100%)" extraClasses="row-span-2 col-start-1 row-start-1">
-    <img src="/images/illustration-multiple-platforms.webp" alt="image">
-    <h2 class="">Manage multiple accounts and platforms</h2>
+<Card color="hsl(0, 0%, 100%)" extraClasses="col-start-2 row-start-5 row-span-3 flex flex-col justify-between">
+    <div class="overflow-x-clip">
+        <div class=" w-[130%]">
+            <img  class="w-full h-full" src="/images/illustration-multiple-platforms.webp" alt="image">
+        </div>
+    </div>
+    <h2 class="text-3xl container">Manage multiple accounts and platforms.</h2>
 </Card>
-<Card color="hsl(39, 100%, 71%)" extraClasses="row-span-2 col-start-4 row-start-1">
-    <h2 class="">Mantain a consistent posting schedule.</h2>
-    <img src="/images/illustration-consistent-schedule.webp" alt="image">
+<Card color="hsl(39, 100%, 71%)"  extraClasses="row-span-3 col-start-3 row-start-5 overflow-y-clip">
+    <h2 class="text-2xl">Mantain a consistent posting schedule.</h2>
+             <img class="max-w-full max-h-full" src="/images/illustration-consistent-schedule.webp" alt="image">
 </Card>
-<Card color="hsl(254, 88%, 90%)">
-    <h2 class="">Schedule to social media</h2>
-    <img src="/images/illustration-schedule-posts.webp" alt="image">
+<Card color="hsl(254, 88%, 90%)"  extraClasses="row-span-7 col-start-4 row-start-1 overflow-x-clip flex flex-col items-baseline justify-evenly">
+    <h2 class="text-3xl">Schedule to social media.</h2>
+            <div class=" max-w-[130%]">
+                <img class="w-full h-full" src="/images/illustration-schedule-posts.webp" alt="image">
+            </div>
     <p>Optimize post timings to publish content at the perfect time for your audience.</p>
 </Card>
-<Card color="hsl(256, 67%, 59%)">
-    <img src="/images/illustration-grow-followers.webp" alt="image">
-    <h2>Grow followers with non-stop content</h2>
+<Card color="hsl(256, 67%, 59%)"  extraClasses="row-span-3 col-span-2 col-start-3 row-start-8 flex p-4 justify-center items-center">
+        <div class="max-w-full">
+            <img class="max-w-full h-auto" src="/images/illustration-grow-followers.webp" alt="image">
+        </div>
+        <h2 class="text-white text-4xl">Grow followers with non-stop content</h2>
 </Card>
-<Card color="hsl(0, 0%, 100%)">
-    <h2>>56%</h2>
-    <p>faster audience growth</p>
-    <img src="/images/illustration-audience-growth.webp" alt="image">
+<Card color="hsl(0, 0%, 100%)"  extraClasses="row-span-3 col-start-2 row-start-8 flex flex-col items-baseline justify-between">
+        <h2 class="text-5xl font-bold">>56%</h2>
+        <p>faster audience growth</p>
+        <img class="max-w-[80%]" src="/images/illustration-audience-growth.webp" alt="image">
 </Card>
-<Card color="hsl(31, 66%, 93%)">
-    <h2>Create and schedule content <span>quicker</span></h2>
+<Card color="hsl(31, 66%, 93%)"  extraClasses="row-span-5 col-start-1 row-start-1 flex flex-col justify-evenly gap-4">
+    <h2 class="text-4xl">Create and schedule content <span class="text-purple-500 italic">quicker.</span></h2>
     <img src="/images/illustration-create-post.webp" alt="image">
 </Card>
-<Card color="hsl(39, 100%, 71%)">
-    <h2>Write your content using AI.</h2>
-    <img src="/images/illustration-ai-content.webp" alt="image">
+<Card color="hsl(39, 100%, 71%)"  extraClasses="row-span-5 col-start-1 row-start-6 flex flex-col items-baseline justify-between">
+    <h2 class="text-4xl">Write your content using AI.</h2>
+            <div class="max-w-full flex items-center justify-center">
+                <img  class="max-w-[80%] h-auto" src="/images/illustration-ai-content.webp" alt="image">
+            </div>
 </Card>
 </main>
