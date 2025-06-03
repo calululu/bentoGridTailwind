@@ -1,52 +1,128 @@
----
-import Card from "./Card.astro";
----
-<main class="grid grid-rows-10 grid-cols-4 gap-4 w-dvw h-dvh p-20 pl-40 pr-40">
-<Card color="hsl(256, 67%, 59%)" extraClasses="col-span-2 col-start-2 row-span-4 row-start-1 flex flex-col items-center justify-evenly">
-    <h1 class="text-white text-center text-5xl">Social Media <span class="text-yellow-500">10x</span> <span class="italic">Faster</span> with AI</h1>
-    <div class="flex flex-col items-center">
-        <img class="w-4/10" src="/images/illustration-five-stars.webp" alt="image">
-        <p class="text-yellow-100">Over 4,000 5-starts reviews</p>
+<!-- 10 rows 4 cols -->
+<main
+  class='flex max-h-[1000px] max-w-[1300px] flex-col gap-8 p-20 xl:grid xl:h-dvh xl:w-dvw xl:grid-cols-4 xl:grid-rows-10'
+>
+  <!-- Social media -->
+  <section
+    class='grid-element flex flex-col items-center justify-evenly gap-5 bg-purple-500 p-10 xl:col-span-2 xl:col-start-2 xl:row-span-4 xl:row-start-1'
+  >
+    <h1 class='text-center text-5xl text-white'>
+      Social Media <span class='text-yellow-500'>10x</span>
+      <span class='italic'>Faster</span> with AI
+    </h1>
+    <div class='flex flex-col items-center'>
+      <img
+        class='w-7/10'
+        src='/images/illustration-five-stars.webp'
+        alt='image'
+      />
+      <p class='text-yellow-100'>Over 4,000 5-starts reviews</p>
     </div>
-</Card>
-<Card color="hsl(0, 0%, 100%)" extraClasses="col-start-2 row-start-5 row-span-3 flex flex-col justify-between">
-    <div class="overflow-x-clip">
-        <div class=" w-[130%]">
-            <img  class="w-full h-full" src="/images/illustration-multiple-platforms.webp" alt="image">
-        </div>
+  </section>
+
+  <!-- Manage multiple Accounts -->
+  <section
+    class='grid-element col-start-2 row-span-3 row-start-5 flex flex-col justify-between bg-white'
+  >
+    <div class='overflow-x-clip'>
+      <div class='xl:w-[130%]'>
+        <img
+          class='h-full w-full'
+          src='/images/illustration-multiple-platforms.webp'
+          alt='image'
+        />
+      </div>
     </div>
-    <h2 class="text-3xl container">Manage multiple accounts and platforms.</h2>
-</Card>
-<Card color="hsl(39, 100%, 71%)"  extraClasses="row-span-3 col-start-3 row-start-5 overflow-y-clip">
-    <h2 class="text-2xl">Mantain a consistent posting schedule.</h2>
-             <img class="max-w-full max-h-full" src="/images/illustration-consistent-schedule.webp" alt="image">
-</Card>
-<Card color="hsl(254, 88%, 90%)"  extraClasses="row-span-7 col-start-4 row-start-1 overflow-x-clip flex flex-col items-baseline justify-evenly">
-    <h2 class="text-3xl">Schedule to social media.</h2>
-            <div class=" max-w-[130%]">
-                <img class="w-full h-full" src="/images/illustration-schedule-posts.webp" alt="image">
-            </div>
-    <p>Optimize post timings to publish content at the perfect time for your audience.</p>
-</Card>
-<Card color="hsl(256, 67%, 59%)"  extraClasses="row-span-3 col-span-2 col-start-3 row-start-8 flex p-4 justify-center items-center">
-        <div class="max-w-full">
-            <img class="max-w-full h-auto" src="/images/illustration-grow-followers.webp" alt="image">
-        </div>
-        <h2 class="text-white text-4xl">Grow followers with non-stop content</h2>
-</Card>
-<Card color="hsl(0, 0%, 100%)"  extraClasses="row-span-3 col-start-2 row-start-8 flex flex-col items-baseline justify-between">
-        <h2 class="text-5xl font-bold">>56%</h2>
-        <p>faster audience growth</p>
-        <img class="max-w-[80%]" src="/images/illustration-audience-growth.webp" alt="image">
-</Card>
-<Card color="hsl(31, 66%, 93%)"  extraClasses="row-span-5 col-start-1 row-start-1 flex flex-col justify-evenly gap-4">
-    <h2 class="text-4xl">Create and schedule content <span class="text-purple-500 italic">quicker.</span></h2>
-    <img src="/images/illustration-create-post.webp" alt="image">
-</Card>
-<Card color="hsl(39, 100%, 71%)"  extraClasses="row-span-5 col-start-1 row-start-6 flex flex-col items-baseline justify-between">
-    <h2 class="text-4xl">Write your content using AI.</h2>
-            <div class="max-w-full flex items-center justify-center">
-                <img  class="max-w-[80%] h-auto" src="/images/illustration-ai-content.webp" alt="image">
-            </div>
-</Card>
+    <h2 class='text-3xl'>Manage multiple accounts and platforms.</h2>
+  </section>
+
+  <!-- Maintain a consistent -->
+  <section
+    class='relative col-start-3 row-span-3 row-start-5 max-w-[26rem] overflow-clip rounded-2xl bg-yellow-500 p-4'
+  >
+    <h2 class='text-3xl'>Mantain a consistent posting schedule.</h2>
+    <div class='min-h-44'>
+      <img
+        class='absolute -bottom-10 max-h-52 xl:-bottom-25 xl:max-h-40 2xl:-bottom-20'
+        src='/images/illustration-consistent-schedule.webp'
+        alt='image'
+      />
+    </div>
+  </section>
+
+  <!-- Schedule to  social media -->
+  <section
+    class='grid-element flex flex-col items-center gap-4 overflow-x-clip bg-purple-100 xl:col-start-4 xl:row-span-7 xl:row-start-1 xl:items-baseline xl:justify-center'
+  >
+    <h2 class='text-3xl'>Schedule to social media.</h2>
+    <div class='w-[130%]'>
+      <img
+        class='h-full w-full'
+        src='/images/illustration-schedule-posts.webp'
+        alt='image'
+      />
+    </div>
+    <p class='px-4 text-center text-xl xl:text-left'>
+      Optimize post timings to publish content at the perfect time for your
+      audience.
+    </p>
+  </section>
+
+  <!-- Grow followers -->
+  <section
+    class='grid-element flex flex-col items-center justify-center gap-8 bg-purple-500 xl:col-span-2 xl:col-start-3 xl:row-span-3 xl:row-start-8 xl:flex-row'
+  >
+    <div class='grid max-w-full place-items-center xl:block'>
+      <img
+        class='w-2/3 xl:w-[80%]'
+        src='/images/illustration-grow-followers.webp'
+        alt='image'
+      />
+    </div>
+    <h2 class='text-center text-4xl text-white xl:text-left'>
+      Grow followers with non-stop content.
+    </h2>
+  </section>
+
+  <!-- faster audience -->
+  <section
+    class='grid-element flex flex-col gap-4 bg-white xl:col-start-2 xl:row-span-3 xl:row-start-8 xl:items-baseline xl:justify-between'
+  >
+    <h2 class='text-5xl font-bold'>>56%</h2>
+    <p>faster audience growth</p>
+    <img
+      class='max-w-[80%]'
+      src='/images/illustration-audience-growth.webp'
+      alt='image'
+    />
+  </section>
+
+  <!-- Create and schedule -->
+  <section
+    class='grid-element flex flex-col justify-center gap-4 bg-yellow-100 xl:col-start-1 xl:row-span-5 xl:row-start-1'
+  >
+    <h2 class='text-4xl'>
+      Create and schedule content
+      <span class='text-purple-500 italic'>quicker.</span>
+    </h2>
+    <img
+      class='max-w-2/3 xl:max-w-full'
+      src='/images/illustration-create-post.webp'
+      alt='image'
+    />
+  </section>
+
+  <!-- write your content -->
+  <section
+    class='grid-element flex flex-col items-baseline justify-between gap-4 bg-yellow-500 xl:col-start-1 xl:row-span-5 xl:row-start-6 xl:items-center'
+  >
+    <h2 class='text-4xl'>Write your content using AI.</h2>
+    <div class='flex max-w-[70%] items-center justify-center xl:max-w-[80%]'>
+      <img
+        class='w-full'
+        src='/images/illustration-ai-content.webp'
+        alt='image'
+      />
+    </div>
+  </section>
 </main>

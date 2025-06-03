@@ -1,58 +1,55 @@
-@import "tailwindcss";
-@import "./components.css" layer(components);
+@import 'tailwindcss';
+@import './components.css' layer(components);
 /* @import "./base.css" layer(base); */
 /* si possono importare come layer (base, components, utils), o scrivere direttamente qui */
-@layer base {
-  /* Crea i valori di deafult del sito web */
-  @font-face {
-    font-family: "DM sans-r";
-    src: url("/fonts/static/DMSans-Regular.ttf");
+@font-face {
+    font-family: 'DM sans-r';
+    src: url('/fonts/static/DMSans-Regular.ttf');
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-  }
-  @font-face {
-    font-family: "DM sans-m";
-    src: url("/fonts/static/DMSans-Medium.ttf");
+}
+@font-face {
+    font-family: 'DM sans-m';
+    src: url('/fonts/static/DMSans-Medium.ttf');
     font-style: normal;
     font-weight: 500;
     font-display: swap;
-  }
-  p {
-    font-size: var(--text-lg);
-    font-family: "DM sans-r", sans-serif;
-  }
-  h1 {
-    font-size: var(--text-3xl);
-  }
-  h2 {
-    /* font-size: 2rem; */
-    font-size: var(--text-2xl);
-    line-height: 1em;
-  }
-  h1,
-  h2 {
-    /* font-weight: bold; */
-    line-height: 1;
-    font-family: "DM sans-m", sans-serif;
-  }
 }
 
-@font-face {
-  font-family: "DM sans";
-  src: url("/fonts/static/DMSans-Regular.ttf");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
+@layer base {
+    /* Crea i valori di deafult del sito web */
+    p {
+        font-size: var(--text-lg);
+        font-family: 'DM sans-r', sans-serif;
+        line-height: normal;
+    }
+    h1 {
+        font-size: var(--text-3xl);
+    }
+    h2 {
+        font-size: var(--text-2xl);
+        line-height: 1em;
+    }
+    h1,
+    h2 {
+        line-height: 1;
+        font-family: 'DM sans-m', sans-serif;
+        letter-spacing: -1px;
+        line-height: normal;
+    }
 }
 
 @theme {
-  /* aggiunge variabili tailwind */
-  --color-yellow-100: hsl(31, 66%, 93%);
-  --color-yellow-500: hsl(39, 100%, 71%);
-  --color-purple-100: hsl(254, 88%, 90%);
-  --color-purple-500: hsl(256, 67%, 59%);
-  --color-l-gray: #f5f5f5;
+    /* aggiunge variabili tailwind */
+    --color-yellow-100: hsl(31, 66%, 93%);
+    --color-yellow-500: hsl(39, 100%, 71%);
+    --color-purple-100: hsl(254, 88%, 90%);
+    --color-purple-500: hsl(256, 67%, 59%);
+    --color-l-gray: #f5f5f5;
 
-  --font-dm-sans: "DM sans", sans-serif;
+    --text-3xl: 1.8rem;
+
+    --font-dm-sans-r: 'DM sans-r', sans-serif;
+    --font-dm-sans-m: 'DM sans-m', sans-serif;
 }

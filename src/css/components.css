@@ -1,27 +1,33 @@
 /* crea le classi custom per il sito */
 .dm-sans-r {
-  font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: 'DM Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 .dm-sans-m {
-  font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
+    font-family: 'DM Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .a_footer {
-  color: #3e52a3;
+    color: #3e52a3;
+    text-decoration: underline; /* Add underline by default */
 }
 .a_footer:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .grid-element {
-  border-radius: 16px;
-  padding: 1rem;
-  margin: 1rem;
-  /* justify-content: center; */
+    border-radius: 16px;
+    padding: 1rem;
+    max-width: 26rem;
+}
+
+@media only screen and (width >= 80rem) {
+.grid-element {
+    max-width: none;
+}
 }
